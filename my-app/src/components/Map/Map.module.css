@@ -1,0 +1,88 @@
+.map {
+  width: 100vw;
+  height: 75vh;
+}
+.marker_module {
+  position: relative;
+}
+.marker_module:hover .price-tag {
+  transform: scale(1.2);
+}
+.price-tag {
+  background-color: rgb(222, 222, 222);
+  padding: 5px 10px;
+  border-radius: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.info_window {
+  border-radius: 1rem;
+  position: absolute;
+  width: 0;
+  left: 120%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: white;
+}
+
+.info-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  flex-grow: 1;
+}
+.info-image img {
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+.info-text {
+  padding: 15px;
+}
+.info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.info-title h2 {
+  font-weight: 600;
+}
+.info-title-rate {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-para {
+}
+.info-para-price {
+  font-weight: 600;
+}
+.mb {
+  margin-bottom: 8px;
+}
+.highlight {
+  z-index: 100;
+}
+.highlight .info_window {
+  width: 400px;
+  animation: info_window_animation 1.5s ease;
+}
+@keyframes info_window_animation {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.99) translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(-50%);
+  }
+}

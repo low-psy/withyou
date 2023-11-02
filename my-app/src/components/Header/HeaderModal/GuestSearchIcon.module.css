@@ -1,0 +1,15 @@
+.search_icon-wrapper {
+  background-color: rgb(28, 126, 223);
+  padding: 15px;
+  border-radius: 2rem;
+  margin-right: -15px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100px;
+  align-items: center;
+  cursor: pointer;
+}
+.search_icon-wrapper:hover {
+  background-color: dodgerblue;
+  transition: all 0.3s ease;
+}

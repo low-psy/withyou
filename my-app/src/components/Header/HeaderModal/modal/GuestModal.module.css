@@ -1,0 +1,55 @@
+.guest{
+  height: 100%;
+  padding:2rem;
+  display: flex;
+}
+.guest-wrapper{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.guest-item{
+  flex-grow: 1;
+  display: flex;
+}
+.item-contents{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  color:rgb(104, 104, 104);
+}
+.person{
+  flex-grow: 1;
+}
+.person h4{
+  color:black;
+  font-size: 1.1rem;
+}
+.count{
+  flex-basis: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.count-number{
+  color:black;
+  font-size: 1.1rem;
+}
+.minus_icon,
+.plus_icon{
+  line-height: 1;
+  padding:6px;
+  border-radius: 50%;
+  border: 1px solid rgb(104, 104, 104);
+  cursor: pointer;
+}
+.assist_animal{
+  cursor: pointer;
+  color:rgb(54, 54, 54);
+  text-decoration: underline;
+}
+.disabled{
+  cursor: not-allowed;
+  color:rgb(184, 184, 184);
+  border: 1px solid rgb(184, 184, 184);
+}

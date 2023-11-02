@@ -1,0 +1,13 @@
+body{
+  margin-top: 200px;
+}
+.header{
+  left:0;
+  top:0;
+  z-index:1200;
+  position: fixed;
+  width: 100%;
+}
+.main{
+  position: relative;
+}

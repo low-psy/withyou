@@ -1,0 +1,40 @@
+.header-category {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.header-category-item {
+  margin: 0 10px;
+  padding: 12px 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+}
+.header-category-item::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: rgb(123, 123, 123);
+  margin: 0 60px;
+  transition: margin 0.3s ease;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.header-category-item:hover::after {
+  margin: 0;
+}
+.header-category-item:hover {
+  color: rgb(123, 123, 123);
+}
+.onActive::after {
+  margin: 0;
+  background-color: black;
+}
+.onActive:hover {
+  color: inherit;
+}
